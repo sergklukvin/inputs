@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.main {
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+
+  .form-elements {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .example-form {
+    width: 100%;
+
+    .text-inputs {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .text-input {
+      display: flex;
+      justify-content: space-between;
+
+      .wrapper-input {
+        width: 336px;
+      }
+    }
+  }
+
+  .bottom-block {
+    display: flex;
+  }
+
+  .form-title-wrapper {
+    margin-top: 50px;
+    width: 640px;
+    height: 720px;
+    background-color: rgb(247, 243, 243);
+    padding: 30px;
+    padding-top: 60px;
+
+    form {
+      width: 490px;
+      margin: auto;
+
+      .form-title {
+        font-size: 48px;
+        text-align: center;
+      }
+
+      .top-block {
+        display: flex;
+        justify-content: space-between;
+
+        .top-block-input {
+          width: 226px;
+        }
+      }
+
+      .block-radiobutton {
+        display: flex;
+        justify-content: space-around;
+
+        p {
+          color: #3f51b5;
+          font-size: 12px;
+        }
+
+        .block-radiobutton-inner {
+          margin: 10px;
+          width: 200px;
+
+          div {
+            mat-radio-group {
+              display: flex;
+              justify-content: space-around;
+            }
+          }
+        }
+      }
+
+      .input-bottom {
+        margin-left: auto;
+        margin-right: auto;
+        width: 336px;
+      }
+
+      .button-next {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .radio-inputs {
+    margin-top: 50px;
+    margin-left: 100px;
+
+    div {
+      margin-top: 15px;
+      margin-bottom: 30px;
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .radio-inputs-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+  }
+}

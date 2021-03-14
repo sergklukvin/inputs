@@ -1,0 +1,185 @@
+<div class="main">
+  <p class="form-elements">3.Form Elements</p>
+  <hr />
+  <form class="example-form">
+    <p class="text-inputs">3.1 Text Inputs</p>
+    <div class="text-input">
+      <div class="wrapper-input">
+        <p>3.1.1 Default</p>
+        <app-ui-input
+          [label]="label"
+          [placeholder]="placeholder"
+          [value]="value1"
+          [autoclear]="true"
+        ></app-ui-input>
+      </div>
+      <div class="wrapper-input">
+        <p>3.1.2 Focused</p>
+        <app-ui-input
+          [label]="label"
+          [placeholder]="placeholder"
+          [value]="value2"
+          [autoclear]="false"
+          [autofocus]="true"
+        ></app-ui-input>
+      </div>
+      <div class="wrapper-input">
+        <p>3.1.3 Completed</p>
+        <app-ui-input
+          [label]="label"
+          [placeholder]="placeholder"
+          [value]="value3"
+        ></app-ui-input>
+      </div>
+    </div>
+    <div class="text-input">
+      <div class="wrapper-input">
+        <p>3.1.4 Autoclear</p>
+        <app-ui-input
+          [label]="label"
+          [placeholder]="placeholder"
+          [value]="value4"
+          [autoclear]="true"
+        ></app-ui-input>
+      </div>
+      <div class="wrapper-input">
+        <p>3.1.5 Error</p>
+        <app-ui-input
+          [label]="label"
+          [placeholder]="placeholder"
+          [value]="value5"
+          [hasError]="true"
+        ></app-ui-input>
+      </div>
+      <div class="wrapper-input">
+        <p>3.1.6 Disabled</p>
+        <app-ui-input
+          [label]="label"
+          [placeholder]="placeholder"
+          [value]="value6"
+          [disabled]="true"
+        ></app-ui-input>
+      </div>
+    </div>
+  </form>
+  <div class="bottom-block">
+    <div class="form-title-wrapper">
+      <form>
+        <p class="form-title">Form Title</p>
+        <div class="top-block">
+          <div class="top-block-input">
+            <app-ui-input
+              [label]="label"
+              [placeholder]="placeholder"
+              [value]="value6"
+              [onSubmit]="onSubmit"
+            ></app-ui-input>
+          </div>
+          <div class="top-block-input">
+            <app-ui-input
+              [label]="label"
+              [placeholder]="placeholder"
+              [value]="value6"
+              [onSubmit]="onSubmit"
+            ></app-ui-input>
+          </div>
+        </div>
+        <div class="block-radiobutton">
+          <div class="block-radiobutton-inner">
+            <p>Experience with Angular 10-11</p>
+            <div>
+              <mat-radio-group [name]="name1">
+                <app-ui-radio-button
+                  [title]="titleNo"
+                  [name]="name1"
+                ></app-ui-radio-button>
+                <app-ui-radio-button
+                  [title]="titleYes"
+                  [name]="name1"
+                  [checked]="true"
+                ></app-ui-radio-button>
+              </mat-radio-group>
+            </div>
+          </div>
+          <div class="block-radiobutton-inner">
+            <p>Estimate for the task - 4h</p>
+            <div>
+              <mat-radio-group [name]="name2">
+                <app-ui-radio-button
+                  [title]="titleNo"
+                  [name]="name2"
+                ></app-ui-radio-button>
+                <app-ui-radio-button
+                  [title]="titleYes"
+                  [name]="name2"
+                  [checked]="true"
+                ></app-ui-radio-button>
+              </mat-radio-group>
+            </div>
+          </div>
+        </div>
+        <div class="input-bottom">
+          <app-ui-input
+            [label]="label"
+            [placeholder]="placeholder"
+            [value]="value6"
+            [onSubmit]="onSubmit"
+          ></app-ui-input>
+        </div>
+        <div class="input-bottom">
+          <app-ui-input
+            [label]="label"
+            [placeholder]="placeholder"
+            [value]="value6"
+            [onSubmit]="onSubmit"
+          ></app-ui-input>
+        </div>
+        <div class="input-bottom">
+          <app-ui-input
+            [label]="label"
+            [placeholder]="placeholder"
+            [value]="value6"
+            [onSubmit]="onSubmit"
+          ></app-ui-input>
+        </div>
+        <app-ui-button
+          class="button-next"
+          (click)="clickNext($event)"
+        ></app-ui-button>
+      </form>
+    </div>
+    <div class="radio-inputs">
+      <p class="radio-inputs-title">4.2 Radio Inputs</p>
+      <div>
+        <p>4.2.1 Enabled Unselected</p>
+        <app-ui-radio-button [title]="titleInputText"> </app-ui-radio-button>
+      </div>
+      <div>
+        <mat-radio-group [name]="name4">
+          <p>4.2.2 Enabled Selected</p>
+          <app-ui-radio-button
+            [title]="titleInputText"
+            [checked]="true"
+          ></app-ui-radio-button>
+        </mat-radio-group>
+      </div>
+      <div>
+        <mat-radio-group [name]="name3">
+          <p>4.2.3 Disabled Unselected</p>
+          <app-ui-radio-button
+            [title]="titleInputText"
+            [disabled]="true"
+            [checked]="true"
+          ></app-ui-radio-button>
+        </mat-radio-group>
+      </div>
+      <div>
+        <p>4.2.4 Disabled Selected</p>
+        <app-ui-radio-button
+          [title]="titleInputText"
+          [disabled]="true"
+        ></app-ui-radio-button>
+      </div>
+    </div>
+  </div>
+</div>
